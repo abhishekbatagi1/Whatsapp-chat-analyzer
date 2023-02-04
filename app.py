@@ -89,3 +89,8 @@ if uploaded_file is not None:
         fig, ax = plt.subplots()
         ax= sns.heatmap(activity_heat)
         st.pyplot(fig)    
+st.sidebar.title("Here is a sample file to analyze")
+
+file_url = "https://drive.google.com/file/d/1TzMp1jr86lBJzRLHt7E1ysfZq_AcuC5r/view?usp=sharing"
+
+st.sidebar.markdown("<a href='%s' download>Download file</a>" % file_url, unsafe_allow_html=True) 
