@@ -43,7 +43,7 @@ if uploaded_file is not None:
         # timeline
         timeline = helper.monthly_timeline(selected_user,df)
         fig, ax = plt.subplots()
-        plt.plot(timeline['time'],timeline['messages'])
+        ax.plot(timeline['time'],timeline['message'])
         plt.xticks(rotation=45)
         st.pyplot(fig)
         # finding the busiest users in the group
